@@ -20,11 +20,11 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'nodejs-docs-hello-world-master'
+    SourceFolder: '$(agent.builddirectory)'
     Contents: |
       **\*.js
       **\*.json
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/nodeapp.zip'
+    TargetFolder: '$(build.artifactstagingdirectory)'
     OverWrite: true
 - script: |
     echo Files should be copied I hope!
