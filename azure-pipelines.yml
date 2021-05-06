@@ -20,7 +20,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'nodejs-docs-hello-world'
+    SourceFolder: 'nodejs-docs-hello-world-master'
     Contents: |
       **\*.js
       **\*.json
