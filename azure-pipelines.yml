@@ -20,9 +20,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    Contents: |
-      **\*.js
-      **\*.json
+    Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
     OverWrite: true
 - script: |
